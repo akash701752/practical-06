@@ -7,7 +7,17 @@ using namespace std ;
 int main() //Task  2
 {
    // Task 2 to Check a string is Palindrome or not
-  string str1   , str2 ;
+  string str1   , str2 ;/*
+ to use getline
+ char str1 , str 2;
+ while(getchar()!='\n')
+ getline(cin,str1);
+ getline(cin,str1);
+
+
+
+
+*/
   cout<<"Enter  String 1     : ";
   cin>> str1 ;
   //cout<<"Enter  String 2     : ";
@@ -54,7 +64,7 @@ int main() //Task  2
 }
 /*
  to use getline
- char str1 , str 2;
+ string str1 , str 2;
  while(getchar()!='\n')
  getline(cin,str1);
  getline(cin,str1);

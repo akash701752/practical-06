@@ -52,3 +52,10 @@ int main() //Task  2
   */
  return 0 ;
 }
+/*
+ to use getline
+ char str1 , str 2;
+ while(getchar()!='\n')
+ getline(cin,str1);
+ getline(cin,str1);
+*/

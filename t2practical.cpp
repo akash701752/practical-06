@@ -7,65 +7,20 @@ using namespace std ;
 int main() //Task  2
 {
    // Task 2 to Check a string is Palindrome or not
-  string str1   , str2 ;/*
- to use getline
- char str1 , str 2;
- while(getchar()!='\n')
- getline(cin,str1);
- getline(cin,str1);
+   string str1 , str2;
+   cout<<"Enter a String : ";
+   getline(cin,str1) ;
+   string :: reverse_iterator rit ;
+   for(rit=str1.rbegin(); rit !=str1.rend();++rit) ;
+   {
+      str2 = str2 + *rit ;
+   }
+   cout<<"Reverse String is :" << str2 << endl ;
+   cout<< str1.size() << endl ;
+   cout<< str2.size() << endl ;
+   int x = str2.compare(str2) ;
+   (x==0)? cout<<"String is Palindrome " << endl : cout<<"String is Palindrome " << endl ;
+   return 0 ;
 
-
-
-
-*/
-  cout<<"Enter  String 1     : ";
-  cin>> str1 ;
-  //cout<<"Enter  String 2     : ";
-  //cin>> str2 ;
-  int i  , j , k = str1.length(), count = 0 ;
-  cout<< "String Length is :  " << k << endl  ;
-  //if((str1.length())==(str2.length()))
-  // {
-    for(i=0;i<=k;i++)
-    {
-      /*for(j=k ; j>=0 ;j--)
-      { 
-        if(str1[i]==str[j])
-        {
-          count ++ ;
-        }
-        /*else
-        {
-          break ;
-        } 
-      } */
-      if(str1[i]==str1[k])
-      {
-        count ++ ;
-        k -- ;
-      }
-    }
-    if(count==str1.size())
-    {
-      cout<< "String is Palindrome !! " << endl ;
-    }
-    else
-    {
-      cout<< "String is NOT Palindrome !! " << endl ;
-    }
- //}
- /*
-  else
-  {
-    cout<< "Both Strings are NOT Palindrome !! " << endl ;
-  }
-  */
- return 0 ;
 }
-/*
- to use getline
- string str1 , str 2;
- while(getchar()!='\n')
- getline(cin,str1);
- getline(cin,str1);
-*/
+

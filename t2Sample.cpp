@@ -8,46 +8,22 @@ using namespace std ;
 int main() //Task  2
 {
    // Task 2 to Check a string is Palindrome or not
-  string str  ;
-  cout<<"Enter  String 1     : ";
-  cin>> str1 ;
-  
-  
-  string :: iterator it ;
-  int i , j = str.end() ,count  = 0  ;
-  for(it= str.begin(); it<=str.end();it++)
+  string str1 ;
+  cout<<"Enter a String : " ;
+  getline(cin,str1);
+  string str2 ;
+  string :: reverse_iterator rit;
+  for(rit=str1.rbegin();rit!=str1.rend();++rit)
   {
-    if(str[it]==str[j])
-    {
-      count ++  ;
-      j -- ;
-    }
+    str2 = str2 + *rit ;
   }
-  int m = str.end() ;
-  if(count==  m)
-  {
-    cout<<"!!! String is Palindrome !!! " ;
-  }
-  else
-  {
-    cout<<"!!! String is NOT Palindrome !!! " ;
-  }
-  
+  cout<<"Reverse String is : "<< str2 << endl ;
+  cout<<str1.size() << endl ;
+  cout<<str2.size() << endl ;
+  int x = str1.compare(str2) ;
+  (x==0)? cout<<"String is Palindrome "<<endl: cout<<"String is not Palindrome" <<endl ;
  return 0 ;
 }
-/*
- to use getline
- string str1 , str 2;
- while(getchar()!='\n')
- getline(cin,str1);
- getline(cin,str1);
- 
- to use palindrome 
- string  :: 
-
-
-
-*/
 
 
 

@@ -1,12 +1,13 @@
+// Task 3 to Reverse a String 
 #include<bits/stdc++.h>
 #include<iostream>
 #include<string>
 #define MAX 20
 using namespace std ;
 
-int main() //Task  2
+int main() //Task  3
 {
-   // Task 3 to Reverse a String  
+    
   string str1 ;
   cout<<"Enter a String : " ;
   getline(cin,str1);

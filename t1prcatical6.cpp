@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
 using namespace std ;
-/*
+
 int main() //Task  1
 {
    // Task 1 to use '+' operator  in int + int , string + string , float + float ,string + int 
@@ -25,4 +25,4 @@ int main() //Task  1
   */
   return 0 ;
 }
-*/
+

@@ -1,4 +1,3 @@
-// Task 4 to Reverse a string a Manually
 // Practical 6
 // Task 4 To Comapare String Manually
 #include <iostream>

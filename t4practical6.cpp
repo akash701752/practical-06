@@ -1,26 +1,26 @@
 // Task 4 to Reverse a string a Manually
-#include<bits/stdc++.h>
-#include<iostream>
-#include<string>
-using namespace std ;
+// Practical 6
+// Task 4 To Comapare String Manually
+#include <iostream>
 
-int main() //Task  4
+using namespace std;
+
+int main()
 {
-   // Task 4 to Reverse a string a Manually
-   string str1  ;
-   cout<<"Enter a String : ";
-   getline(cin,str1) ;
-   string str2 ;
-   string :: reverse_iterator rit ;
-   for(rit=str1.rbegin(); rit !=str1.rend();rit++) ;
-   {
-      str2 = str2 + *rit ;
-   }
-   
-   //cout<<"Reverse String is :"<< str2 << endl ;
-   cout<<"Reverse String is : " ;
-   cout << str2 << endl ;
-   return 0 ;
-
+    string str1 , str2 ;
+    cout<<"Enter String 1 : ";
+    getline(cin,str1) ;
+    cout<<"Enter String 2 : ";
+    getline(cin,str2) ;
+    if(str1==str2)
+    {
+        cout<<"Entered String are Equal "<<endl ;
+    }
+    else
+    {
+        cout<<"Entered String are NOT Equal "<<endl ;
+    }
+    return 0;
 }
+
 
